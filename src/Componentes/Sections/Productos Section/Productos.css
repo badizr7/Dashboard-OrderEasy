@@ -1,0 +1,137 @@
+:root {
+  --PrimaryColor: hsl(252, 100%, 11%);
+  --HoverColor: hsl(252, 100%, 11%);
+  --palegreen: hsl(0, 0%, 11%);
+  --whiteColor: hsl(0%, 0%, 100%);
+  --blackColor: hsl(0%, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+/* Encabezado */
+.topSection .headerSection {
+  justify-content: space-between;
+}
+.topSection .headerSection .title h1 {
+  font-size: var(--h1FontSize);
+  color: var(--whiteColor);
+  font-weight: 700;
+}
+.topSection .headerSection .title p {
+  font-size: var(--normalFontSize);
+  color: var(--textColor);
+  font-weight: 500;
+  padding: 5px;
+}
+.topSection .headerSection .searchBar {
+  padding: 1rem 2rem;
+  background: var(--whiteColor);
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+.topSection .headerSection .searchBar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+.topSection .headerSection .searchBar .icon {
+  color: var(--textColor);
+}
+.topSection .headerSection .searchBar .icon:hover {
+  color: var(--PrimaryColor);
+}
+.topSection .headerSection .adminDiv {
+  gap: 1rem;
+}
+.topSection .headerSection .adminDiv .icon {
+  font-size: var(--biggestFontSize);
+  background: var(--whiteColor);
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+
+/* Contenido */
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1 5px 5px 2px var(--blackColor);
+  border: 6px solid transparent;
+  background-color: var(--bgColor);
+  border-radius: 10px;
+}
+.producto:hover {
+  background: hsl(197, 60%, 83%);
+}
+
+.producto_img .img-product {
+  width: 290px;
+  height: 250px;
+}
+
+.producto_Footer {
+  padding: 1rem;
+}
+.producto_Footer h1 {
+  font-weight: 600;
+  font-size: var(--h2FontSize);
+  color: var(--blackColor);
+}
+.producto_Footer p {
+  font-weight: 600;
+  color: var(--blackColor);
+  text-transform: uppercase;
+  font-size: var(--h3FontSize);
+}
+.producto_Footer .precio {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+}
+
+.producto .button- {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 2rem;
+  padding: 0 1rem;
+  margin: 1rem;
+  align-items: center;
+}
+.producto .button- .btn {
+  border: none;
+  outline: 0;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 45px;
+  font-size: var(--h3FontSize);
+  font-weight: 500;
+}
+
+.button- div {
+  display: grid;
+  align-items: center;
+  margin-left: -2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.productos {
+  padding: 5rem 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 1rem;
+  box-sizing: border-box;
+}/*# sourceMappingURL=Productos.css.map */

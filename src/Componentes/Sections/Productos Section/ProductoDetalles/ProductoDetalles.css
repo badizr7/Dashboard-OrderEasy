@@ -1,0 +1,74 @@
+:root {
+  --PrimaryColor: hsl(252, 100%, 11%);
+  --HoverColor: hsl(252, 100%, 11%);
+  --palegreen: hsl(0, 0%, 11%);
+  --whiteColor: hsl(0%, 0%, 100%);
+  --blackColor: hsl(0%, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.detalles {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+.detalles .price {
+  font-size: 3rem;
+  width: 100%;
+}
+.detalles .btn {
+  max-width: 300px;
+  margin: 1rem 0 0 0;
+  padding: 1rem 1rem;
+  font-size: var(--h2FontSize);
+  font-weight: 600;
+}
+.detalles .cantidad {
+  font-size: var(--h2FontSize);
+  font-weight: 600;
+}
+.detalles .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 1rem;
+  max-width: 350px;
+}
+
+.detalles img {
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: -7rem;
+  pointer-events: none;
+}
+
+.detalles .description {
+  font-size: var(--h3FontSize);
+  max-width: 1300px;
+  width: 100%;
+  letter-spacing: 1px;
+  color: var(--textColor);
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.relacionados {
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+  margin: 20px auto;
+  font-size: var(--h2FontSize);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=ProductoDetalles.css.map */

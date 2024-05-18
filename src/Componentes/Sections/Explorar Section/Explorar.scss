@@ -1,0 +1,82 @@
+:root {
+    --PrimaryColor: hsl(252, 100%, 11%);
+    --HoverColor: hsl(252, 100%, 11%);
+    --palegreen: hsl(0, 0%, 11%);
+    --whiteColor: hsl(0%, 0%, 100%);
+    --blackColor: hsl(0%, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+}
+
+.table{
+    width: 100%;
+
+}
+
+.tableHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.table-section{
+    height: 747px;
+    overflow: auto;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: var(--bgColor);
+    font-size: var(--h2FontSize);
+}
+
+th,td{
+    border-bottom: 1px solid var(--greyText);
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+
+td img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+tr:hover td{
+    color: var(--HoverColor);
+    cursor: pointer;
+}
+.btn{
+    padding: 10px 20px; 
+}
+
+td{
+    font-size: var(--h2FontSize);
+}
+
+.row{
+    font-size: var(--h2FontSize);
+}
+
+::-webkit-scrollbar{
+    height: 5px;
+    width: 5px;
+}
